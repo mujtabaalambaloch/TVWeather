@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A94DA6C1DBE26D800A7B40E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA6B1DBE26D800A7B40E /* AppDelegate.swift */; };
+		1A94DA6E1DBE26D800A7B40E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA6D1DBE26D800A7B40E /* ViewController.swift */; };
+		1A94DA711DBE26D800A7B40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A94DA6F1DBE26D800A7B40E /* Main.storyboard */; };
+		1A94DA731DBE26D800A7B40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A94DA721DBE26D800A7B40E /* Assets.xcassets */; };
+		1A94DA7E1DBE26D800A7B40E /* TVWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA7D1DBE26D800A7B40E /* TVWeatherUITests.swift */; };
+		1A94DA8E1DBE5CD200A7B40E /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA8D1DBE5CD200A7B40E /* ForecastTableViewCell.swift */; };
+		1A94DA951DBE5CF500A7B40E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA911DBE5CF500A7B40E /* Forecast.swift */; };
+		1A94DA961DBE5CF500A7B40E /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA921DBE5CF500A7B40E /* Temperature.swift */; };
+		1A94DA971DBE5CF500A7B40E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA931DBE5CF500A7B40E /* List.swift */; };
+		1A94DA981DBE5CF500A7B40E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA941DBE5CF500A7B40E /* Weather.swift */; };
+		1A94DA9C1DBE5D0A00A7B40E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA9A1DBE5D0A00A7B40E /* Constants.swift */; };
+		1A94DA9D1DBE5D0A00A7B40E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA9B1DBE5D0A00A7B40E /* Network.swift */; };
+		1A94DA9F1DBE5DCF00A7B40E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DA9E1DBE5DCF00A7B40E /* Main.swift */; };
+		1A94DAA11DBE60CB00A7B40E /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DAA01DBE60CB00A7B40E /* Sys.swift */; };
+		1A94DAA31DBE643900A7B40E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DAA21DBE643900A7B40E /* ViewModel.swift */; };
+		1A94DAA51DBE71BD00A7B40E /* DateTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A94DAA41DBE71BD00A7B40E /* DateTool.swift */; };
+		3BCAC82BD093DD1FDB0EDD4D /* Pods_TVWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA67399A30679A70163374C /* Pods_TVWeather.framework */; };
+		984C087D5B9DBDFF306A2CDF /* Pods_TVWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1982F3C338B8B3E134D06B /* Pods_TVWeatherUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A94DA7A1DBE26D800A7B40E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A94DA601DBE26D800A7B40E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A94DA671DBE26D800A7B40E;
+			remoteInfo = TVWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A94DA681DBE26D800A7B40E /* TVWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A94DA6B1DBE26D800A7B40E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A94DA6D1DBE26D800A7B40E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A94DA701DBE26D800A7B40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A94DA721DBE26D800A7B40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A94DA741DBE26D800A7B40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A94DA791DBE26D800A7B40E /* TVWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A94DA7D1DBE26D800A7B40E /* TVWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVWeatherUITests.swift; sourceTree = "<group>"; };
+		1A94DA7F1DBE26D800A7B40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A94DA8D1DBE5CD200A7B40E /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		1A94DA911DBE5CF500A7B40E /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		1A94DA921DBE5CF500A7B40E /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		1A94DA931DBE5CF500A7B40E /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		1A94DA941DBE5CF500A7B40E /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1A94DA9A1DBE5D0A00A7B40E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1A94DA9B1DBE5D0A00A7B40E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1A94DA9E1DBE5DCF00A7B40E /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		1A94DAA01DBE60CB00A7B40E /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
+		1A94DAA21DBE643900A7B40E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1A94DAA41DBE71BD00A7B40E /* DateTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTool.swift; sourceTree = "<group>"; };
+		27FF7A65A6D87067551B953F /* Pods-TVWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVWeather/Pods-TVWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		4420F3B733638F12DC009568 /* Pods-TVWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVWeather/Pods-TVWeather.release.xcconfig"; sourceTree = "<group>"; };
+		48782FDAD32E75779282DB95 /* Pods-TVWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVWeatherUITests/Pods-TVWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1982F3C338B8B3E134D06B /* Pods_TVWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56AC2BBA7F0579DF8845CD7 /* Pods-TVWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVWeatherUITests/Pods-TVWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FFA67399A30679A70163374C /* Pods_TVWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A94DA651DBE26D800A7B40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCAC82BD093DD1FDB0EDD4D /* Pods_TVWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A94DA761DBE26D800A7B40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984C087D5B9DBDFF306A2CDF /* Pods_TVWeatherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A94DA5F1DBE26D800A7B40E = {
+			isa = PBXGroup;
+			children = (
+				1A94DA6A1DBE26D800A7B40E /* TVWeather */,
+				1A94DA7C1DBE26D800A7B40E /* TVWeatherUITests */,
+				1A94DA691DBE26D800A7B40E /* Products */,
+				77646F017849A79884809829 /* Pods */,
+				1AE5C9EE35C85FF63AB24DF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A94DA691DBE26D800A7B40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA681DBE26D800A7B40E /* TVWeather.app */,
+				1A94DA791DBE26D800A7B40E /* TVWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A94DA6A1DBE26D800A7B40E /* TVWeather */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DAA61DBE71C000A7B40E /* DateTool */,
+				1A94DA991DBE5CFB00A7B40E /* Network */,
+				1A94DA901DBE5CE900A7B40E /* Models */,
+				1A94DA8F1DBE5CDA00A7B40E /* Views */,
+				1A94DA891DBE27AC00A7B40E /* Controllers */,
+				1A94DA881DBE27A600A7B40E /* Delegate */,
+				1A94DA8A1DBE27B200A7B40E /* Storyboard */,
+				1A94DA8B1DBE27B800A7B40E /* Assets */,
+				1A94DA8C1DBE27BC00A7B40E /* Info */,
+			);
+			path = TVWeather;
+			sourceTree = "<group>";
+		};
+		1A94DA7C1DBE26D800A7B40E /* TVWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA7D1DBE26D800A7B40E /* TVWeatherUITests.swift */,
+				1A94DA7F1DBE26D800A7B40E /* Info.plist */,
+			);
+			path = TVWeatherUITests;
+			sourceTree = "<group>";
+		};
+		1A94DA881DBE27A600A7B40E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA6B1DBE26D800A7B40E /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		1A94DA891DBE27AC00A7B40E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA6D1DBE26D800A7B40E /* ViewController.swift */,
+				1A94DAA21DBE643900A7B40E /* ViewModel.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1A94DA8A1DBE27B200A7B40E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA6F1DBE26D800A7B40E /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		1A94DA8B1DBE27B800A7B40E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA721DBE26D800A7B40E /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		1A94DA8C1DBE27BC00A7B40E /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA741DBE26D800A7B40E /* Info.plist */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		1A94DA8F1DBE5CDA00A7B40E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA8D1DBE5CD200A7B40E /* ForecastTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1A94DA901DBE5CE900A7B40E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA911DBE5CF500A7B40E /* Forecast.swift */,
+				1A94DA921DBE5CF500A7B40E /* Temperature.swift */,
+				1A94DA931DBE5CF500A7B40E /* List.swift */,
+				1A94DA941DBE5CF500A7B40E /* Weather.swift */,
+				1A94DA9E1DBE5DCF00A7B40E /* Main.swift */,
+				1A94DAA01DBE60CB00A7B40E /* Sys.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1A94DA991DBE5CFB00A7B40E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DA9A1DBE5D0A00A7B40E /* Constants.swift */,
+				1A94DA9B1DBE5D0A00A7B40E /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1A94DAA61DBE71C000A7B40E /* DateTool */ = {
+			isa = PBXGroup;
+			children = (
+				1A94DAA41DBE71BD00A7B40E /* DateTool.swift */,
+			);
+			name = DateTool;
+			sourceTree = "<group>";
+		};
+		1AE5C9EE35C85FF63AB24DF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA67399A30679A70163374C /* Pods_TVWeather.framework */,
+				AE1982F3C338B8B3E134D06B /* Pods_TVWeatherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77646F017849A79884809829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27FF7A65A6D87067551B953F /* Pods-TVWeather.debug.xcconfig */,
+				4420F3B733638F12DC009568 /* Pods-TVWeather.release.xcconfig */,
+				48782FDAD32E75779282DB95 /* Pods-TVWeatherUITests.debug.xcconfig */,
+				D56AC2BBA7F0579DF8845CD7 /* Pods-TVWeatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A94DA671DBE26D800A7B40E /* TVWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A94DA821DBE26D800A7B40E /* Build configuration list for PBXNativeTarget "TVWeather" */;
+			buildPhases = (
+				4BB4A5EED1209126E9619D02 /* [CP] Check Pods Manifest.lock */,
+				1A94DA641DBE26D800A7B40E /* Sources */,
+				1A94DA651DBE26D800A7B40E /* Frameworks */,
+				1A94DA661DBE26D800A7B40E /* Resources */,
+				2A42235A6DDC8B7DB6903125 /* [CP] Embed Pods Frameworks */,
+				5BEAD222AD7ACEE7F294AFFD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVWeather;
+			productName = TVWeather;
+			productReference = 1A94DA681DBE26D800A7B40E /* TVWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A94DA781DBE26D800A7B40E /* TVWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A94DA851DBE26D800A7B40E /* Build configuration list for PBXNativeTarget "TVWeatherUITests" */;
+			buildPhases = (
+				1CD96F07AD3AB1CF52A97D24 /* [CP] Check Pods Manifest.lock */,
+				1A94DA751DBE26D800A7B40E /* Sources */,
+				1A94DA761DBE26D800A7B40E /* Frameworks */,
+				1A94DA771DBE26D800A7B40E /* Resources */,
+				59F62449E98329D45790DE7C /* [CP] Embed Pods Frameworks */,
+				E483A14A3B12937FE3F6345D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A94DA7B1DBE26D800A7B40E /* PBXTargetDependency */,
+			);
+			name = TVWeatherUITests;
+			productName = TVWeatherUITests;
+			productReference = 1A94DA791DBE26D800A7B40E /* TVWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A94DA601DBE26D800A7B40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Mujtaba Alam";
+				TargetAttributes = {
+					1A94DA671DBE26D800A7B40E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3UJEPK4LT;
+						ProvisioningStyle = Automatic;
+					};
+					1A94DA781DBE26D800A7B40E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3UJEPK4LT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1A94DA671DBE26D800A7B40E;
+					};
+				};
+			};
+			buildConfigurationList = 1A94DA631DBE26D800A7B40E /* Build configuration list for PBXProject "TVWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A94DA5F1DBE26D800A7B40E;
+			productRefGroup = 1A94DA691DBE26D800A7B40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A94DA671DBE26D800A7B40E /* TVWeather */,
+				1A94DA781DBE26D800A7B40E /* TVWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A94DA661DBE26D800A7B40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A94DA731DBE26D800A7B40E /* Assets.xcassets in Resources */,
+				1A94DA711DBE26D800A7B40E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A94DA771DBE26D800A7B40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CD96F07AD3AB1CF52A97D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A42235A6DDC8B7DB6903125 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVWeather/Pods-TVWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BB4A5EED1209126E9619D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59F62449E98329D45790DE7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVWeatherUITests/Pods-TVWeatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BEAD222AD7ACEE7F294AFFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVWeather/Pods-TVWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E483A14A3B12937FE3F6345D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVWeatherUITests/Pods-TVWeatherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A94DA641DBE26D800A7B40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A94DA9F1DBE5DCF00A7B40E /* Main.swift in Sources */,
+				1A94DA951DBE5CF500A7B40E /* Forecast.swift in Sources */,
+				1A94DA8E1DBE5CD200A7B40E /* ForecastTableViewCell.swift in Sources */,
+				1A94DA6E1DBE26D800A7B40E /* ViewController.swift in Sources */,
+				1A94DA971DBE5CF500A7B40E /* List.swift in Sources */,
+				1A94DAA11DBE60CB00A7B40E /* Sys.swift in Sources */,
+				1A94DA961DBE5CF500A7B40E /* Temperature.swift in Sources */,
+				1A94DA9D1DBE5D0A00A7B40E /* Network.swift in Sources */,
+				1A94DA6C1DBE26D800A7B40E /* AppDelegate.swift in Sources */,
+				1A94DA981DBE5CF500A7B40E /* Weather.swift in Sources */,
+				1A94DAA31DBE643900A7B40E /* ViewModel.swift in Sources */,
+				1A94DA9C1DBE5D0A00A7B40E /* Constants.swift in Sources */,
+				1A94DAA51DBE71BD00A7B40E /* DateTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A94DA751DBE26D800A7B40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A94DA7E1DBE26D800A7B40E /* TVWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A94DA7B1DBE26D800A7B40E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A94DA671DBE26D800A7B40E /* TVWeather */;
+			targetProxy = 1A94DA7A1DBE26D800A7B40E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A94DA6F1DBE26D800A7B40E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A94DA701DBE26D800A7B40E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A94DA801DBE26D800A7B40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		1A94DA811DBE26D800A7B40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A94DA831DBE26D800A7B40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FF7A65A6D87067551B953F /* Pods-TVWeather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = V3UJEPK4LT;
+				INFOPLIST_FILE = TVWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujtaba.TVWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A94DA841DBE26D800A7B40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4420F3B733638F12DC009568 /* Pods-TVWeather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = V3UJEPK4LT;
+				INFOPLIST_FILE = TVWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujtaba.TVWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1A94DA861DBE26D800A7B40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48782FDAD32E75779282DB95 /* Pods-TVWeatherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V3UJEPK4LT;
+				INFOPLIST_FILE = TVWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujtaba.TVWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TVWeather;
+			};
+			name = Debug;
+		};
+		1A94DA871DBE26D800A7B40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56AC2BBA7F0579DF8845CD7 /* Pods-TVWeatherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V3UJEPK4LT;
+				INFOPLIST_FILE = TVWeatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mujtaba.TVWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TVWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A94DA631DBE26D800A7B40E /* Build configuration list for PBXProject "TVWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A94DA801DBE26D800A7B40E /* Debug */,
+				1A94DA811DBE26D800A7B40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A94DA821DBE26D800A7B40E /* Build configuration list for PBXNativeTarget "TVWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A94DA831DBE26D800A7B40E /* Debug */,
+				1A94DA841DBE26D800A7B40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A94DA851DBE26D800A7B40E /* Build configuration list for PBXNativeTarget "TVWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A94DA861DBE26D800A7B40E /* Debug */,
+				1A94DA871DBE26D800A7B40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A94DA601DBE26D800A7B40E /* Project object */;
+}
